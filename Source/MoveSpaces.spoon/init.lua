@@ -75,7 +75,7 @@ local function moveToSpace(win, direction)
     hs.eventtap.event.newMouseEvent(hs.eventtap.event.types.leftMouseDown, clickPoint):post()
     hs.timer.usleep(sleepTime)
 
-    hs.eventtap.keyStroke({"cmd", "ctrl"}, direction == "east" and "right" or "left")
+    spaces.changeToSpace(targetSpace)
 
     hs.timer.waitUntil(
         function()
