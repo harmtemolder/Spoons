@@ -1,5 +1,11 @@
+-- Internal function used to find our location, so we know where to load files from
+local function script_path()
+    local str = debug.getinfo(2, 'S').source:sub(2)
+    return str:match('(.*/)')
+end
+
 local spaces       = require('hs._asm.undocumented.spaces')
-local activeScreen = require('ext.screen').activeScreen
+local activeScreen = dofile(script_path() .. 'screen.lua').activeScreen -- changed this
 local module       = {}
 
 module.activeSpaceIndex = function(screenSpaces)
