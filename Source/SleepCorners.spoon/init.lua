@@ -81,7 +81,7 @@ _internals.sleepScreen = screen.primaryScreen()
 ---   `UR` - Upper right corner
 ---   `LR` - Lower right corner
 ---   `LL` - Lower left corner
-_internals.sleepNowCorner = "LL"
+_internals.sleepNowCorner = "UL"
 
 --- SleepCorners.neverSleepCorner
 --- Variable
@@ -94,7 +94,7 @@ _internals.sleepNowCorner = "LL"
 ---   * `UR` - Upper right corner
 ---   * `LR` - Lower right corner
 ---   * `LL` - Lower left corner
-_internals.neverSleepCorner = "LR"
+_internals.neverSleepCorner = "UR"
 
 --- SleepCorners.feedbackSize
 --- Variable
